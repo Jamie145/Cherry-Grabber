@@ -9,7 +9,7 @@ public class DoorWay : MonoBehaviour
     private bool playerInsiddeZone = false;
     private void Update()
     {
-        if (playerInsiddeZone &&Input.GetKey("w"))
+        if (playerInsiddeZone &&Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
         {
             Debug.Log("W or Up Arrow was pressed");
 
